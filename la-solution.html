@@ -1,0 +1,151 @@
+
+<body>
+
+    <div>  
+        <h1>
+            LA SOLUTION POUR  S01E14 Atelier Github
+        </h1>
+
+            <p>Aujourd'hui on a fait un nouvel atelier sur Github, afin de reprendre les notions vues jusqu'ici, mais aussi pour aller un peu plus loin.<br>
+                RAPPEL : le but des ateliers n'était pas la complétion à 100%, mais juste allez le plus loin possible par nos propres moyens, apres avoir harceler, traumatiser..., les formateur, tuteur 
+                nous avons reussi a produire quelque chose qui <strong>theoriquement devrai fonctionner.</strong> <br>
+                C'est ce que nous allons voir aujourd'hui.<br>
+                Cela vous pérmétra par la meme d'atteindre les différents objectis que doit toujours se fixer un dev junior.
+            </p>
+        <h2>
+            Objectifs 🏁 :
+        </h2>
+             <ol>
+
+                    <li> à s'entrainer sur le Terminal, Git, Github et VSCode</li>
+                    <li>  pratiquer la logique algorithmique à travers la rédaction d'une suite d'instructions</li>
+                    <li>  rédiger un fichier clair, lisible, et éventuellement ponctué de commentaires pour le rendre le plus agréable à lire par votre formateur/tuteur
+            utiliser la documentation et les ressources à votre disposition pour réaliser les différentes étapes (Kourou pour les fiches récaps)</li>
+                    <li> 'hui, le fil conducteur de cet atelier sera un fichier Markdown instructions.md que vous allez créer, et dans lequel vous allez consigner toutes les étapes et commandes utilisées pour réaliser l'atelier.</li>
+             </ol>
+    </div>
+                        <p> somme, le fichier que vous allez rédiger sera lui-même la solution complète de cet atelier 🤯 Plus d'infos dans les étapes suivantes.</p>
+        <h3>
+            <strong>
+                Etape 1 - creer le dossier sur sa machine qui va recevoir le repo.
+            </strong>      
+        </h3>    
+            <ol>
+                <ul>
+                    <p>
+                        <li>
+                            dans l'explorer: clic droit, nouveau dossier, le nommer: rentrer dans le dossier.
+                        </li> 
+                    </p> 
+                </ul>
+                <ul>
+                    <p>
+                        <li>
+                            dans Git: mkdir + le nom du dossier/ : rentrer dans le dossier.
+                        </li> 
+                    </p> 
+                </ul>
+            </ol>
+        <h3>
+            <strong>
+                 Étape 2 - Créer le repo sur Github, puis le cloner.<br>
+                 Dans notre cas le repo existe deja, donc faut huste le copier.
+            </strong>    
+        </h3> 
+            <p>   
+                <ol>
+                    <li>
+                        On commence par cliquer sur le bouton "code" pour accéder a l'url.
+                    </li>
+                    <li>
+                        onglet SSH, on fait un copier de l'url.
+                    </li>
+                    <li>
+                        Une fois l'url copier du repo de l'organisation de la promo O'clock, on va aller le cloner sur sa machine avec la commande ( git clone + le copier ) 😉
+                    </li>
+                </ol>
+            </p> 
+            <p>
+                <em>
+                     ⚠️ Rappel : on essaye de garder ses ateliers et les repos organisés dans sa machine, avec des dossiers pour chaque saison, et éventuellement pour chaque épisode.
+                </em>
+            </p>
+        <h3>
+            <strong>
+                Étape 3 - Supprimer le dossier .git/ avec la commande : rm -R .git/
+            </strong>    
+        </h3>    
+            <p>
+                Une fois le projet cloné sur votre machine, on se rend dans le dossier (avec le Terminal Git Bash de préférence). Dans le dossier du projet on va complètement supprimer (toujours avec le terminal) le dossier .git/.
+            </p>    
+
+                <p>
+                    <em>
+                         Désormais le dossier de notre projet est complètement détaché de Github. On va pouvoir le lier à un nouveau repo, que ce soit sur un autre compte ou une autre organisation.
+                    </em>
+                </p> 
+        <h3>
+            <strong>
+                 Étape 4 - Créer le second repo
+            </strong>
+        </h3>   
+            <p>
+                On commence par se rendre sur la page des repositories de son compte perso puis vous allez créer un nouveau repo que vous nommerez S01E14-atelier-github-votrepseudo-solution.
+                    <em>
+                        <ul>
+                           <li>
+                                Cette fois-ci on ne coche pas la case Add a README file puisque le fichier existe déjà dans le dossier du projet.
+                           </li> 
+                            <li>
+                                <strong>
+                                        Notez que l'on ne clone pas ce repo 😉
+                                </strong>
+                            </li>
+                        </ul>
+                    </em> 
+             </p>
+        <h3>
+            <strong>
+                Étape 5 - Relier le nouveau repo Github au projet local
+            </strong>
+        </h3>
+            <p>
+                retourne donc sur son terminal, en faisant évidemment attention de bien se placer dans le dossier de notre projet, celui créer précèdement.
+                Puis on effectue les commandes indiquées (comme ci-dessous), en remplaçant bien sûr le lien SSH par celui de votre propre repo.<br>
+                Une fois dans le dossier du projet :
+            </p><br>
+            <p>
+                <strong>
+                    Exècuter les conmandes suivantes successivement:
+                </strong>
+            </p> 
+                <ol>
+                    <li>
+                        <p> git init</p>
+                    </li>
+                    <li>
+                        <p> git add . </p>
+                    </li>
+                    <li>
+                        <p> git commit -m "first commit"</p>
+                    </li>
+                    <li>
+                        <p> git remote add origin suivie de votre lien SSH qui doit ressembler à ça: ( git@github.com:O-clock-DWA-Session1/test-charly.git )</p>
+                    </li>
+                    <li>
+                        git push -u origin master
+                    </li>
+                </ol>
+            <p>
+                Et voilà, le dossier du projet devrait être bien relié à votre nouveau repo sur Github.
+            </p> 
+        <h4>
+            <strong>
+                si vous avez suivis ces consignes vous avez reussi:<br>
+                si pour x raison cela ne fonctionne pas, remetez vous en cause.
+                si vous ne trouvez toujours pas a quoi c'est du, regarder sur le net car les formateurs on déja donné.
+            </strong>
+        </h4>
+
+
+</body>
